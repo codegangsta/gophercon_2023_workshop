@@ -1,18 +1,22 @@
-autoscale: true
-footer: @thecodegangsta
-background-color: #1E1E1E
-text: #A7ADB2, alignment(left), line-height(0.95), Inter
-header: #ECEDEE, alignment(left), line-height(1), Inter Extra Bold
-text-strong: #FFFFFF, Inter Bold
-header-strong: #32C9BF
-list: bullet-character(•)
-theme: Fira, 5
-slide-transition: true
-slidenumbers: true
-build-lists: true
+---
+theme: css/synadia.css
+---
+<!-- slide bg="./images/Aurora-5k.jpg" -->
+<grid drag="100 75" drop="topleft" >
+# **Supercharged** Micro-services with **NATS** and **Go**
+</grid>
 
-## **Supercharged**<br>Micro-services with **NATS** and **Go**
-#### Jeremy Saenz | Synadia
+<grid drag="100 50" drop="bottomleft" >
+<split gap="1">
+![Image|100](https://avatars.githubusercontent.com/u/178316?v=4) <!-- element class="bio" style="align-self:flex-end;" -->
+::: block
+Jeremy Saenz <!-- element style="padding-top:0.5rem;" -->
+<br>
+Senior Software Engineer at Synadia
+:::
+</split>
+</grid>
+
 ---
 
 # Agenda
@@ -29,10 +33,10 @@ build-lists: true
 
 # Agenda
 
-- Hour 1: **Rethinking Connectivity**
-- Hour 2: **Building Micro-services in Go**
-- Hour 3: **The NATS Server**
-- Hour 4: **JetStream and Persistence**
++ Hour 1: **Rethinking Connectivity**
++ Hour 2: **Building Micro-services in Go**
++ Hour 3: **The NATS Server**
++ Hour 4: **JetStream and Persistence**
 
 ---
 
@@ -40,17 +44,17 @@ build-lists: true
 
 ---
 
-# Jeremy Saenz
+::: block
+<split gap="1">
+![Image|80](https://avatars.githubusercontent.com/u/178316?v=4) <!-- element class="bio" style="align-self:flex-end;" -->
+### Jeremy Saenz <!-- element style="padding-top:1.75rem;" -->
+</split>
+:::
 
-
-[.column]
 - Long time Gopher (@thecodegangsta)
 - Author of **Martini**, **CLI**, **Negroni**, and more...
-- Working @synadia on **NATS**
+- Working **@synadia** on **NATS**
 - Moved from Engineer -> Product and back again
-
-[.column]
-![inline 75%](https://avatars.githubusercontent.com/u/178316?v=4)
 
 ---
 # Pray to the Demo Gods
@@ -144,13 +148,13 @@ It aims to **simplify** the number of technologies you use for your services to 
 ---
 
 # What makes a good architecture?
+
 - Resilient
 - Secure
 - Observable
 - Extensible
 - Adaptive to change
-
-___
+---
 
 # NATS for Micro-service Architectures
 - Resilience
@@ -159,7 +163,7 @@ ___
 - Observability
 - Multi-pattern development
 
-___
+---
 
 # Resilience
 - **Clients** self heal and reconnect to available servers automatically
@@ -167,7 +171,7 @@ ___
 - **Failover** to other Geos/Clouds is **automatic**
 - **Load balancing** comes for **free**
 
-___
+---
 
 # Secure Multi-tenancy
 - **Decentralize** authentication and authorization
@@ -176,7 +180,7 @@ ___
 - **Enforce** resource limits for tenants
 - **Create** permissions for each service without server changes
 
-___
+---
 
 # Location Transparency
 Location transparency is a key characteristic of service-oriented architecture.
@@ -193,14 +197,14 @@ The lookup and dynamic binding to a service at runtime allows the service implem
 - **Automatically** get routed to the closest responder
 - **Traffic Shaping** and **Subject mapping**
 
-___
+---
 
 # Observability
 - **Observe traffic** in real time
 - **Gather latency metrics** on each of your services via exports
 - **Filter metrics ingestion** via subjects
 
-___
+---
 
 # Multi-pattern development
 - Synchronous **Request** and **Reply**
@@ -209,7 +213,7 @@ ___
     - Key/Value and Object store
 - All with multi-language support!
 
-___
+---
 
 ### Exercise #3:
 ## Building a Go Micro-service
@@ -255,7 +259,7 @@ It is multi-tenant, highly configurable and globally scalable.
 
 ---
 
-# What is JetStream
+# What is JetStream?
 - **Secure** data streams with **multiple consumer models**
 - **Multiple streaming patterns** supported
 - **Digital twins**/**replicated data**

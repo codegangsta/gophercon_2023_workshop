@@ -15,20 +15,20 @@ While there is an agenda in place, I typically love to read the room and have no
 
 - Hour 1: First Steps
     - Lecture: What is NATS?
-    - [Exercise 1: Install the NATS CLI](exercises/1_install_nats_cli/README.md)
-    - [Exercise 2: Connecting the Room Part I](exercises/2_connecting_the_room/README.md)
+    - [Exercise 1: Install the NATS CLI](./1_install_nats_cli/README.md)
+    - [Exercise 2: Connecting the Room Part I](./2_connecting_the_room/README.md)
 - Hour 2: Building Micro-services in Go
     - Lecture: NATS for Micro-service Architectures
-    - [Exercise 3: Building a Go Micro-service](exercises/3_building_a_go_microservice/)
-    - [Exercise 4: Connecting the Room Part II](exercises/4_connecting_the_room_2/README.md)
+    - [Exercise 3: Building a Go Micro-service](./3_building_a_go_microservice/)
+    - [Exercise 4: Connecting the Room Part II](./4_connecting_the_room_2/README.md)
 - Hour 3: The NATS Server
     - Lecture: NATS Server topologies
-    - [Exercise 5: Installing and Connecting to NATS Server](exercises/5_install_nats_server/README.md)
-    - [Exercise 6: Leaf Nodes](exercises/6_leaf_nodes/README.md)
+    - [Exercise 5: Installing and Connecting to NATS Server](./5_install_nats_server/README.md)
+    - [Exercise 6: Leaf Nodes](./6_leaf_nodes/README.md)
 - Hour 4: JetStream and Persistence
     - Lecture: What is JetStream?
-    - [Exercise 7: Creating your first Stream](exercises/7_creating_your_first_stream/README.md)
-    - [Exercise 8: Connecting the Room Part III](exercises/8_connecting_the_room_3/README.md)
+    - [Exercise 7: Creating your first Stream](./7_creating_your_first_stream/README.md)
+    - [Exercise 8: Connecting the Room Part III](./8_connecting_the_room_3/README.md)
     - Closing Ceremony
 
 ## Resources
