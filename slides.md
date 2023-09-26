@@ -229,7 +229,7 @@ $ nats pub gophercon.chatroom.[handle] \
 ---
 
 ##### NATS For Micro-service Architectures
-# What makes a good architecture?
+## What makes a good architecture?
 
 - Resilient
 - Secure
@@ -240,7 +240,7 @@ $ nats pub gophercon.chatroom.[handle] \
 ---
 
 ##### NATS For Micro-service Architectures
-# What NATS gives us
+## What NATS gives us
 - Resilience
 - Secure multi-tenancy
 - Location transparency
@@ -357,7 +357,7 @@ $ go get github.com/nats-io/nats.go@latest
 ---
 
 ##### NATS Server Topologies
-# Global Scale and Diversity
+## Global Scale and Diversity
 - **Single Server** - Millions of messages per sec. ~70GiB throughput
 - **Clusters and Superclusters** - Fully meshed groups of servers that can span the globe
 - **Leaf Nodes** - Extend a NATS system with your own private island
@@ -365,7 +365,7 @@ $ go get github.com/nats-io/nats.go@latest
 ---
 
 ##### NATS Server Topologies
-# An Illustrated Guide
+## An Illustrated Guide
 
 ---
 
@@ -385,7 +385,7 @@ $ go get github.com/nats-io/nats.go@latest
 ---
 
 ##### NATS JetStream
-# What is JetStream?
+## What is JetStream?
 JetStream is a next-gen persistence layer built on top of NATS Core that allows temporal decoupling between subscribers and publishers.
 
 It is multi-tenant, highly configurable and globally scalable.
@@ -393,7 +393,7 @@ It is multi-tenant, highly configurable and globally scalable.
 ---
 
 ##### NATS JetStream
-# What is JetStream?
+## What is JetStream?
 - **Secure** data streams with **multiple consumer models**
 - **Multiple streaming patterns** supported
 - **Digital twins**/**replicated data**
@@ -403,7 +403,14 @@ It is multi-tenant, highly configurable and globally scalable.
 ---
 
 ##### NATS JetStream
-# An Illustrated Guide
+## JetStream Demo
+
+https://nats-whiteboard.onrender.com/
+
+---
+
+##### NATS JetStream
+## An Illustrated Guide
 
 ---
 
@@ -413,8 +420,28 @@ It is multi-tenant, highly configurable and globally scalable.
 ---
 
 #### Exercise 8:
+## Key/Value and Object Store
+
+---
+
+#### Exercise 9:
 ## Connecting the Room Part III
 
 ---
 
+---
+
 ## Closing Ceremony
+
+---
+
+#### Bonus Lecture:
+## Authentication and Authorization
+
+---
+
+---
+
+---
+
+---
