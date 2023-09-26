@@ -21,6 +21,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Create a Stream
 	stream, err := js.CreateStream(ctx, jetstream.StreamConfig{
 		Name:        "my_stream",
 		Description: "My stream",
@@ -30,8 +31,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	log.Printf("Stream: %+v", stream)
-
+	// Consume from a stream
 	consumer, err := stream.CreateOrUpdateConsumer(ctx, jetstream.ConsumerConfig{
 		Name:    "my_consumer",
 		Durable: "my_consumer",
