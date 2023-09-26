@@ -22,7 +22,6 @@ Now to test that this works, let's see if you can call a service I built and am 
 
 If you can ping that endpoint, congratulations! You have successfully connected to the NATS demo server. Next up, why don't you try and figure out how to sign the guest book with the NATS CLI.
 
-
 ## Hosting your own service
 
 Hosting your own service on NATS infrastructure is also just as easy, just use the `nats reply` command. Let's collectively create a rolecall service that has a one to many relationship:

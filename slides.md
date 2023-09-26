@@ -136,7 +136,7 @@ It aims to **simplify** the number of technologies you use for your services to 
 ---
 
 ##### Rethinking Connectivity
-# Core NATS
+## Core NATS
 * **Request** and **Reply**
 * **Publish** and **Subscribe**
 * **Fan In** and **Fan Out**
@@ -154,8 +154,72 @@ It aims to **simplify** the number of technologies you use for your services to 
 
 ---
 
+##### Install the NATS CLI
+## Now it's your turn!
+```bash
+$ go install \
+    github.com/nats-io/natscli/nats@latest
+
+$ nats help
+```
+
+---
+
 ### Exercise #2:
 ## Connecting the Room Part I
+
+---
+
+##### Connecting the Room Part I
+## Setting up a NATS context
+```
+$ nats context save -select demo \
+    --server "nats://demo.nats.io:4222"
+    
+#   Server URLs: nats://demo.nats.io:4222
+#         Path: ...
+#   Connection: OK
+```
+
+---
+
+##### Connecting the Room Part I
+## Calling the guestbook service
+```
+$ nats req gophercon.guestbook ""
+```
+
+---
+
+##### Connecting the Room Part I
+## Hosting your own service
+```
+$ nats reply gophercon.rollcall \
+    "YOUR NAME HERE" --queue ""
+```
+
+---
+
+##### Connecting the Room Part I
+## Play the queue group lottery
+```
+$ nats reply gophercon.lottery \
+    "YOUR NAME HERE" --queue "lottery"
+```
+
+---
+
+##### Connecting the Room Part I
+## Poor-mans chat
+```
+$ nats sub "gophercon.chatroom.>"
+```
+
+And in another window:
+```
+$ nats pub gophercon.chatroom.[handle] \
+    "Your Message Here"
+```
 
 ---
 
@@ -244,6 +308,41 @@ The lookup and dynamic binding to a service at runtime allows the service implem
 
 #### Exercise #3:
 ## Building a Go Micro-service
+
+---
+
+##### Building a Go MicroService
+## NATS `micro` package
+- Set of conventions for microservices
+- Service discovery
+- Load balancing
+- Metrics and monitoring
+- Metadata
+
+---
+
+##### Building a Go MicroService
+## Start a `micro` from NATS CLI
+```bash
+$ nats micro serve hello \
+    -H Owner="Your Name"
+```
+
+... And make a request
+
+```bash
+$ nats req hello.echo ""
+```
+
+---
+
+##### Building a Go MicroService
+## Start a new Go project
+```bash
+$ mkdir my_service && cd my_service
+$ go mod init github.com/[ME]/my_service
+$ go get github.com/nats-io/nats.go@latest
+```
 
 ---
 

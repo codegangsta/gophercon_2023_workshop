@@ -6,7 +6,7 @@ Now that we've all created our favorites service, let's run them and make sure t
 
 Now let's see who has connected:
 
-`nats req gophercon.services "" --replies=0`
+`nats micro list "" --replies=0`
 
 When I set replies to 0, it will wait until the timeout period before exiting, giving time for everyone to respond. This acts as a good way to ping all the nodes in a service, for instance, or just a single node in each service. All is possible with some clever queue group naming.
 
